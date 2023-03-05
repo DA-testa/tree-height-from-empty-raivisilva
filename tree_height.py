@@ -27,12 +27,12 @@ def compute_height(n, parents):
 def main():
     # implement input form keyboard and from files
     izvele = input()
-    if izvele == 'I':
+    if izvele[0] == 'I':
         # input number of elements
         n = int(input("Enter the number of nodes: "))
         # input values in one variable, separate with space, split these values in an array
         parents = np.asarray(list(map(int, input("Enter the parent nodes separated by spaces: ").split())))
-    elif izvele == 'F':
+    elif izvele[0] == 'F':
         # let user input file name to use, don't allow file names with letter a
         faila_nosaukums = input("Enter the file name: ")
         if 'a'in faila_nosaukums:
